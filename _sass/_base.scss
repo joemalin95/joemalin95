@@ -21,11 +21,11 @@ body {
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
+h1, h2, h3, h4, h5, h6, article,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit;
 }
 
 
@@ -82,12 +82,13 @@ li {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     line-height: 1.2;
+    margin-bottom: $spacing-unit / 1.2;
 }
 
 h1 {
     font-size: 42px;
 
-    @include media-query($on-palm) {    
+    @include media-query($on-palm) {
         font-size: 26px;
     }
 }

@@ -89,7 +89,7 @@
 .work-nav {
     width: 100%;
     text-align: center;
-    
+
     .ghost-button {
         width: 33.33%;
     }
@@ -136,7 +136,7 @@
     .content-inner {
         padding: 2* $spacing-unit;
 
-        @include media-query($on-palm) {    
+        @include media-query($on-palm) {
             padding: $spacing-unit / 1.5;
         }
     }
@@ -264,7 +264,7 @@ ul.category-posts {
     height: 100%;
     margin-left: $spacing-unit * 1.8;
 
-    @include media-query($on-palm) {   
+    @include media-query($on-palm) {
         position: relative;
         margin-left: 0;
         padding: $spacing-unit / 1.5;
@@ -277,7 +277,7 @@ ul.category-posts {
         margin: 0;
         margin-right: 365px;
 
-        @include media-query($on-palm) {   
+        @include media-query($on-palm) {
             position: relative;
             text-align: center;
             margin-right: 0;
@@ -293,7 +293,7 @@ ul.category-posts {
         margin-top: 0;
         color: $grey-color-light;
 
-        @include media-query($on-palm) {   
+        @include media-query($on-palm) {
             position: relative;
             text-align: center;
             font-size: 16px;
@@ -307,7 +307,7 @@ ul.category-posts {
         bottom: $spacing-unit;
         margin-top: 0;
 
-        @include media-query($on-palm) {   
+        @include media-query($on-palm) {
             position: relative;
             text-align: center;
             bottom: 0;
@@ -318,12 +318,12 @@ ul.category-posts {
 #persona img {
     display: block;
     position: absolute;
-    right: -1px;
-    top: 0;
+    right: 0;
+    top: 394px;
     height: 100%;
     text-decoration: none;
 
-    @include media-query($on-palm) {   
+    @include media-query($on-palm) {
             position: relative;
             width: 100%;
             height: auto;
@@ -414,17 +414,17 @@ ul.category-posts {
         float: left;
     }
 
-    .portfolio-cover { 
+    .portfolio-cover {
         width: 40%;
         @include media-query($on-palm) {
                 float: none;
                 display: block;
                 width: 100%;
                 height: auto;
-        }    
+        }
     }
     .portfolio-description {
-        width: 60%; 
+        width: 60%;
         padding-left: $spacing-unit;
 
         @include media-query($on-palm) {
@@ -433,7 +433,7 @@ ul.category-posts {
                 width: 100%;
                 height: auto;
                 padding-left: 0;
-        }  
+        }
     }
 
     .portfolio-image {
@@ -452,7 +452,7 @@ ul.category-posts {
 
         @include media-query($on-palm) {
                 margin-top: $spacing-unit;
-        }  
+        }
     }
 
     .portfolio-fields {

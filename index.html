@@ -1,23 +1,14 @@
 ---
 layout: default
+active: home
+description: Monika Ratan is Graphic Designer, Game Developer & Blogger. Official website of Monika Ratan.
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+    <article id="persona">
+	    <header>
+		    <h1>{{ site.name }}</h1>
+		    <p>{{ site.description }}</p>
+            {% include social-links.html %}
+	    </header>
+		<img src="{{site.image}}" alt="{{ site.name }}" width="306" height="394"></img>
+    </article>

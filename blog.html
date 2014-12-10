@@ -1,0 +1,28 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+active: blog
+description: Personal blog of Monika Ratan.
+---
+
+<div class="content-inner posts">
+  <p class="rss-subscribe"><a href="{{ site.feeds }}">{% include svg-icons/rss.html %} Subscribe via RSS</a></p>
+
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h2><a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+            {% for category in post.categories %}
+                <span class="post-meta"><a href="/category/{{ category | slugify }}/">{{ category }}</a></span>
+            {% endfor %}
+            <span class="post-meta">{{ post.date | date: "%B %e, %Y" }}</span>
+      <div class="post-summary">
+        {{ post.content | strip_html | truncatewords:50}}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more ghost-button">Read More</a>
+    </article>
+  {% endfor %}
+
+</div>

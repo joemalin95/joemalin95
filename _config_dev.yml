@@ -1,0 +1,9 @@
+#set url
+url: "http://localhost:4000"
+
+#disable the followings on dev machine
+google_analytics:
+disqus:
+ads1:
+ads2:
+ads3:

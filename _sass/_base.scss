@@ -251,8 +251,8 @@ pre {
 }
 
 .ghost-button {
-     background: #fff;
-     border: 1px solid $link-color;
+     color: $brand-color;
+     border: 1px solid $brand-color;
      border-radius: 5px;
      padding: 7px 12px;
      font-weight: 400;
@@ -267,8 +267,8 @@ pre {
 
 .ghost-button:hover, .ghost-button:active {
   color:#fff;
-  border: 1px solid $link-hover-color;
-  background:$link-hover-color;
+  border: 1px solid $brand-color;
+  background:$brand-color;
 }
 
 .ghost-button-group {
@@ -294,7 +294,7 @@ pre {
 
     .active {
       color:#fff;
-      border: 1px solid $link-hover-color;
-      background:$link-hover-color;
+      border: 1px solid $brand-color;
+      background:$brand-color;
     }
 }

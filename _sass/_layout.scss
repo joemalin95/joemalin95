@@ -97,7 +97,7 @@
 }
 
 .footer-credit {
-    padding: $spacing-unit 0;
+    @extend %vertical-rhythm;
     font-size: 12.8px;
 
     a {
@@ -117,7 +117,9 @@
 .content-wrap {
     margin-top: $spacing-unit;
     background-color: #fff;
-    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 0 10px 6px -6px #121212;
+       -moz-box-shadow: 0 10px 6px -6px #121212;
+            box-shadow: 0 10px 6px -6px #121212;
 
     .content-inner {
         padding: 2* $spacing-unit;
@@ -146,6 +148,7 @@
 }
 
 .post-link {
+    color: $brand-color;
     display: block;
 }
 
@@ -225,8 +228,8 @@ ul.category-posts {
 
         svg {
             fill: lighten($grey-color-light, 5%);
-            width: 20px;
-            height: 20px;
+            width: 21px;
+            height: 21px;
             text-align: center;
         }
     }
@@ -315,6 +318,10 @@ ul.category-posts {
         svg {
             fill: $grey-color-light;
             opacity: 0.6;
+
+            &:hover {
+                fill: $light-color;
+            }
         }
     }
 }

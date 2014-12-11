@@ -97,7 +97,10 @@
 }
 
 .footer-credit {
+    margin-top: $spacing-unit;
     @extend %vertical-rhythm;
+
+
     font-size: 12.8px;
 
     a {
@@ -116,7 +119,7 @@
 
 .content-wrap {
     margin-top: $spacing-unit;
-    background-color: #fff;
+    background-color: #121212;
     -webkit-box-shadow: 0 10px 6px -6px #121212;
        -moz-box-shadow: 0 10px 6px -6px #121212;
             box-shadow: 0 10px 6px -6px #121212;

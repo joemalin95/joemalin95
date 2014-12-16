@@ -200,6 +200,11 @@
 .share-page {
     text-align: center;
     color: $grey-color-light;
+    margin-top: $spacing-unit;
+    @extend %vertical-rhythm;
+    border: 1px solid $grey-color-light;
+    border-radius: 5px;
+    padding: 6px 12px;
 
     svg {
         fill: lighten($grey-color-light, 6%);

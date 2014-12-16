@@ -19,6 +19,9 @@ feeds: http://feeds.feedburner.com/kanishkkunal
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-37350394-1
 
+# disqus shortname
+disqus: kanishk
+
 # paging settings
 paginate: 8
 

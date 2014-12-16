@@ -2,26 +2,25 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-@import url(http://fonts.googleapis.com/css?family=Roboto:300,300italic,400);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600);
 
 // Our variables
-$base-font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+$base-font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$link-color:        #009688;
-$link-hover-color:  lighten($link-color, 10%);
+$link-color:        #16a085;
+$link-hover-color:  #1abc9c;
 
-$text-color:       #eee;
-$background-color: #fdfdfd;
-$brand-color:      #009688;
+$text-color:       #ecf0f1;
+$background-color: #2B303B;
 
-$grey-color:       #888888;
-$grey-color-light: lighten($grey-color, 15%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color:       #95a5a6;
+$grey-color-light: #bdc3c7;
+$grey-color-dark:  #7f8c8d;
 
 $light-color:       #ecf0f1;
 

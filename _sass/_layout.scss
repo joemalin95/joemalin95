@@ -11,23 +11,21 @@
 
     a {
         position: relative;
-        color: $light-color;
-        color: rgba(255, 255, 255, 0.2);
+        color: $grey-color;
+        opacity: 0.5;
     }
 
     svg {
-        fill: $light-color;
-        fill: rgba(255, 255, 255, 0.2);
+        fill: $grey-color;
     }
 
     a.active {
-        color: #fff;
-        color: rgba(255, 255, 255, 0.5);
-    }
+        color: $link-color;
+        opacity: 1;
 
-    .active svg {
-        fill: #fff;
-        fill: rgba(255, 255, 255, 0.5);
+        svg {
+            fill: $link-color;
+        }
     }
 
     .page-link {
@@ -94,6 +92,7 @@
 .site-footer {
     text-align: center;
     color: $grey-color-dark;
+    opacity: 0.3;
 }
 
 .footer-credit {
@@ -119,10 +118,7 @@
 
 .content-wrap {
     margin-top: $spacing-unit;
-    background-color: #121212;
-    -webkit-box-shadow: 0 10px 6px -6px #121212;
-       -moz-box-shadow: 0 10px 6px -6px #121212;
-            box-shadow: 0 10px 6px -6px #121212;
+    background-color: $background-color;
 
     .content-inner {
         padding: 2* $spacing-unit;
@@ -144,14 +140,14 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: $grey-color-dark;
     text-align: center;
     text-transform: capitalize;
     margin-right: 6px;
 }
 
 .post-link {
-    color: $brand-color;
+    color: $text-color;
     display: block;
 }
 
@@ -175,7 +171,8 @@
 }
 
 .post-content {
-    margin: $spacing-unit auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .readable-content-wrap {
@@ -184,7 +181,7 @@
 
 .post-summary {
     margin: $spacing-unit auto;
-    color: $grey-color-dark;
+    color: $grey-color;
 }
 
 .read-more {
@@ -256,12 +253,12 @@ ul.category-posts {
     width: 100%;
     height: 100%;
     z-index: 999;
-    background: -moz-linear-gradient(45deg,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(0,0,0,0.8)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(45deg,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(45deg,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(45deg,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
-    background: linear-gradient(45deg,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%); /* W3C */
+    background: -moz-linear-gradient(45deg,  rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(0,0,0,0.9)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(45deg,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
     @include media-query($on-palm) {

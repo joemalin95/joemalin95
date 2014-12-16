@@ -7,7 +7,7 @@ body {
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
-    background-color: #252525;
+    background-color: darken($background-color, 8%);
     -webkit-text-size-adjust: 100%;
     background-image:url('images/overlay.png');
     background-repeat:repeat, no-repeat;
@@ -80,7 +80,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.2;
     margin-bottom: $spacing-unit / 1.2;
 }
@@ -251,11 +251,11 @@ pre {
 }
 
 .ghost-button {
-     color: $brand-color;
-     border: 1px solid $brand-color;
+     color: $link-color;
+     font-weight: 300;
+     border: 1px solid $link-color;
      border-radius: 5px;
      padding: 7px 12px;
-     font-weight: 400;
      margin-right: $spacing-unit;
      text-decoration: none;
      -webkit-transition: all .2s linear;
@@ -266,9 +266,9 @@ pre {
 }
 
 .ghost-button:hover, .ghost-button:active {
-  color:#fff;
-  border: 1px solid $brand-color;
-  background:$brand-color;
+  color:$text-color;
+  border: 1px solid $link-color;
+  background:$link-color;
 }
 
 .ghost-button-group {
@@ -293,8 +293,8 @@ pre {
     }
 
     .active {
-      color:#fff;
-      border: 1px solid $brand-color;
-      background:$brand-color;
+      color:$text-color;
+      border: 1px solid $link-color;
+      background:$link-color;
     }
 }

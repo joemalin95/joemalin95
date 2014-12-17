@@ -12,9 +12,11 @@
                     <div class="portfolio-description">
                         <h2 class="portfolio-title"><a href="{{blog.url}}" target="_blank">{{blog.name}}</a></h2>
                         <div class="portfolio-fields">
+                          <p>
                             {{blog.description}}
+                          </p>
+                          <a title="Articles by {{site.name}} on {{blog.name}}" href="{{blog.author_url}}" target="_blank">{{blog.author_text}} &rarr;</a>
                         </div>
-                        <a class="ghost-button" title="Articles by {{site.name}} on {{blog.name}}" href="{{blog.author_url}}" target="_blank">{{blog.author_text}}</a>
                     </div>
               </div>
           </li>

@@ -367,8 +367,8 @@ ul.category-posts {
 
 /* Portfolio page styling */
 .portfolio-area {
-  margin: $spacing-unit auto;
-  margin: $spacing-unit auto;
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
   max-width: 960px;
   width: 100%;
 }
@@ -376,17 +376,16 @@ ul.category-posts {
   padding-left: 0;
 }
 .portfolio-area .portfolio-item {
-  margin-bottom: 30px;
-  height: 320px;
-  padding: 0 15px;
-  float: left;
+  background-color: darken($background-color, 8%);
+  margin-bottom: $spacing-unit * 2;
+  padding: 0 0;
   list-style-type: none;
-  width: 33.33333333333333%;
+  height: auto;
+  width: 100%;
 
-  @include media-query($on-palm) {
-         height: auto;
-         width: 100%;
-  }
+    figure {
+        margin-bottom: $spacing-unit / 2;
+    }
 }
 
 .portfolio-area ul {
@@ -394,30 +393,31 @@ ul.category-posts {
 }
 
 .portfolio-area .portfolio-content {
-  text-align: center;
+  text-align: left;
 }
 .portfolio-area .portfolio-image {
-    border: 1px solid $light-color;
-    padding: 7px;
-  -webkit-box-shadow: 0px 4px 5px 0px rgba(50, 50, 50, 0.45);
-    -moz-box-shadow:    0px 4px 5px 0px rgba(50, 50, 50, 0.45);
-    box-shadow:         0px 4px 5px 0px rgba(50, 50, 50, 0.45);
-    max-width: 100%;
+    width: 100%;
+    border: 8px solid darken($background-color, 8%);
 }
 .portfolio-area .portfolio-cover {
   width: 100%;
 }
 .portfolio-area .portfolio-title {
-  font-size: 16px;
-  text-transform: capitalize;
+  font-size: 22px;
+  text-transform: uppercase;
   vertical-align: middle;
   width: 100%;
-  margin-top: $spacing-unit;
-  font-weight: 400;
+  margin: $spacing-unit / 2;
+
 }
 .portfolio-area .portfolio-fields {
-  font-size: 12.8px;
-  color: $grey-color;
+    font-size: 0.9 * $base-font-size;
+    margin: $spacing-unit / 2;
+    padding-bottom: $spacing-unit / 2;
+
+    p {
+        margin-bottom: $spacing-unit / 2;
+    }
 }
 .portfolio-area .portfolio-fields .field-list {
   padding: 0;
@@ -430,70 +430,4 @@ ul.category-posts {
 }
 .portfolio-area .portfolio-fields .field-item:last-child:after {
   content: '';
-}
-
-
-/* Different styling for items in blog portfolio */
-#blogs-portfolio {
-
-    .portfolio-item {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-bottom: $spacing-unit * 2;
-    }
-
-    .portfolio-cover, .portfolio-description {
-        display: inline-block;
-        float: left;
-    }
-
-    .portfolio-cover {
-        width: 40%;
-        @include media-query($on-palm) {
-                float: none;
-                display: block;
-                width: 100%;
-                height: auto;
-        }
-    }
-    .portfolio-description {
-        width: 60%;
-        padding-left: $spacing-unit;
-
-        @include media-query($on-palm) {
-                float: none;
-                display: block;
-                width: 100%;
-                height: auto;
-                padding-left: 0;
-        }
-    }
-
-    .portfolio-image {
-        width: 100%;
-        height: auto;
-    }
-
-    .portfolio-content {
-      text-align: left;
-    }
-
-    .portfolio-title {
-        margin-top: 0;
-        font-size: $base-font-size * 1.2;
-        line-height: 1;
-
-        @include media-query($on-palm) {
-                margin-top: $spacing-unit;
-        }
-    }
-
-    .portfolio-fields {
-        margin-bottom: $spacing-unit;
-    }
-
-    .ghost-button {
-        font-size: 14px;
-    }
 }

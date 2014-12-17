@@ -1,20 +1,20 @@
 - name: Super Dev Resources
   img: http://superdevresources.com/wp-content/uploads/sites/7/2014/01/preview.png
   url: http://superdevresources.com/
-  author_url: http://superdevresources.com/author/ratan-monika/
+  author_url: http://superdevresources.com/author/kanishk/
   author_text: View my articles
   description: Super Dev Resources is a site dedicated to independent developers and small teams who are looking to enhance the experience of their apps & websites. You can find great free resources, tools, design inspirations, tutorials & more for app and web developers.
 
 - name: Super Blogging Resources
   img: http://superbloggingresources.com/wp-content/uploads/sites/9/2014/10/super-blogging-resources-primary.jpg
   url: http://superbloggingresources.com/
-  author_url: http://superbloggingresources.com/author/ratan-monika/
+  author_url: http://superbloggingresources.com/author/kanishk/
   author_text: View my articles
   description: Super Blogging Resources helps bloggers and content writers take their articles to the next level. Learn about online publishing, content marketing, search engine optimization and writing content that people love.
 
-- name: Fiction Writing
-  img: /images/fiction.jpg
-  url: /category/fiction/
-  author_url: /2013/11/12/the-lost-abode/
-  author_text: Read first chapter
-  description: An attempt at writing fiction stories. First three chapters are done and available to read online. Hang tight while I find some time to complete the entire story.
+- name: Coding Tips
+  img: /images/codingtips.png
+  url: http://codingtips.kanishkkunal.in/
+  author_url: http://codingtips.kanishkkunal.in/
+  author_text: Visit Coding Tips
+  description: At Coding Tips, I share tips from my development experience, app and web development tutorials & solutions of issues I face in my day to day development work.

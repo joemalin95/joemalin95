@@ -19,6 +19,10 @@
         fill: $grey-color;
     }
 
+    a:hover {
+        opacity: 1;
+    }
+
     a.active {
         color: $link-color;
         opacity: 1;
@@ -103,9 +107,13 @@
     font-size: 12.8px;
 
     a {
-        color: $grey-color-dark;
+        color: $grey-color-light;
         text-decoration: none;
         font-weight: 400;
+
+        &:hover,&:active {
+            color: $light-color;
+        }
     }
 }
 

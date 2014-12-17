@@ -141,11 +141,11 @@ h6 {
 a {
     color: $link-color;
     text-decoration: none;
-    -webkit-transition: color .5s linear;
-    -moz-transition: color .5s linear;
-    -ms-transition: color .5s linear;
-    -o-transition: color .5s linear;
-    transition: color .5s linear;
+    -webkit-transition: color .3s linear;
+    -moz-transition: color .3s linear;
+    -ms-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
 
     &:hover, &:active {
         color: $link-hover-color;

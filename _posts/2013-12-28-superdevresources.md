@@ -4,7 +4,7 @@ title: Design, development, marketing and monetization resources for developers
 date: 2013-12-28 00:40
 author: kanishk
 comments: true
-categories: [Image, Windows Development, Windows Phone Development]
+categories: [Windows Development, Windows Phone Development]
 ---
 If you are a Windows Phone or a Windows 8 apps developer like me then I have just one link to share with you today: <a title="SuperDevResources for Windows Phone &amp; Windows 8 developers" href="http://superdevresources.com/" target="_blank">superdevresources.com</a>
 

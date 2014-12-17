@@ -13,9 +13,6 @@ description: Personal blog of Kanishk Kunal.
     <article class="post">
 
       <h2><a class="post-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-            {% for category in post.categories %}
-                <span class="post-meta"><a href="/category/{{ category | slugify }}/">{{ category }}</a></span>
-            {% endfor %}
             <span class="post-meta">{{ post.date | date: "%B %e, %Y" }}</span>
       <div class="post-summary">
         {{ post.content | strip_html | truncatewords:50}}

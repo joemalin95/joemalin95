@@ -151,7 +151,16 @@
     color: $grey-color-dark;
     text-align: center;
     text-transform: capitalize;
-    margin-right: 6px;
+    margin-right: 8px;
+
+    a {
+        color: $grey-color-dark;
+        font-weight: 400;
+
+        &:hover {
+            color: $grey-color-light;
+        }
+    }
 }
 
 .post-link {
@@ -189,7 +198,7 @@
 
 .post-summary {
     margin: $spacing-unit auto;
-    color: $grey-color;
+    color: $grey-color-light;
 }
 
 .read-more {
@@ -198,10 +207,11 @@
 
 
 .rss-subscribe a {
-    color: $grey-color-light;
+    color: $grey-color;
 
     svg {
-        fill: lighten($grey-color-light, 6%);
+        fill: darken($grey-color, 6%);
+        margin-right: 3px;
     }
 }
 

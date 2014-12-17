@@ -8,8 +8,10 @@ categories: [Image, Windows Development, Windows Phone Development]
 ---
 If you are a Windows Phone or a Windows 8 apps developer like me then I have just one link to share with you today: <a title="SuperDevResources for Windows Phone &amp; Windows 8 developers" href="http://superdevresources.com/" target="_blank">superdevresources.com</a>
 
-<a title="SuperDevResources for Windows Phone &amp; Windows 8 developers" href="http://superdevresources.com/" target="_blank"><img class="aligncenter size-full wp-image-320" alt="preview" src="http://kanishkkunal.kunruchcreations.com/wp-content/uploads/sites/2/2013/12/preview.png" width="600" height="315" /></a>
+<a title="SuperDevResources for Windows Phone &amp; Windows 8 developers" href="http://superdevresources.com/" target="_blank"><img class="aligncenter size-full wp-image-320" alt="preview" src="http://kanishkkunal.in/wp-content/uploads/sites/2/2013/12/preview.png" width="600" height="315" /></a>
+
 <p style="text-align: center;"><em>Yes, I agree, the logo is funny :)</em></p>
+
 superdevresources.com offers you a collection of resources useful for development of apps on Windows Phone and Windows 8. Be it design, development, marketing or monetization of your apps, you will find all useful resources listed here which will make your life as a developer much easier.
 
 Whether you are a new developer or an experienced one, superdevresources.com promises to be your best companion online. You will always find up-to-date resources under many different easy to find categories. Also stay up-to-date with news sites and developer blogs. Don't forget to add your own favorite resources (if not already listed) in the contribute section and help share it with others.
@@ -25,5 +27,5 @@ Whether you are a new developer or an experienced one, superdevresources.com pro
 <strong>Tip: Pin to your Taskbar</strong>
 If you pin superdevresources.com to your taskbar you will be able to easily access various sections of the site as shown below.
 
-<a href="http://kanishkkunal.kunruchcreations.com/wp-content/uploads/sites/2/2013/12/taskbar.png"><img class="alignleft size-full wp-image-334" alt="taskbar" src="http://kanishkkunal.kunruchcreations.com/wp-content/uploads/sites/2/2013/12/taskbar.png" width="273" height="304" />
+<a href="http://kanishkkunal.in/wp-content/uploads/sites/2/2013/12/taskbar.png"><img class="alignleft size-full wp-image-334" alt="taskbar" src="http://kanishkkunal.in/wp-content/uploads/sites/2/2013/12/taskbar.png" width="273" height="304" />
 </a>

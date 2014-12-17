@@ -2,8 +2,6 @@
 layout: post
 title: All my sites now running self-made themes
 date: 2014-02-14 20:19
-author: kanishk
-comments: true
 categories: [Web Development, WordPress]
 ---
 As you may already know, I started developing <strong>WordPress themes</strong> about a month back and released my first theme called <a title="Fastr – a simple, elegant &amp; fast WordPress theme" href="http://kanishkkunal.in/fastr-simple-elegant-fast-wordpress-theme/"><strong>Fastr</strong></a> for free download. However, calling myself a theme developer, while having my own sites using themes developed by others, seemed a bit awkward to me. Therefore, I dedicated last few weeks to update all my sites with self-made themes.
@@ -16,12 +14,14 @@ The result of about three weeks of work was two new WordPress themes, <strong>De
 	<li><a href="http://apps.kunruchcreations.com/">http://apps.kunruchcreations.com/</a></li>
 	<li><a href="http://kanishkkunal.in/">http://kanishkkunal.in/</a></li>
 	<li><a href="http://themes.kanishkkunal.in/">http://themes.kanishkkunal.in/</a></li>
-	<li><a href="http://monika.kunruchcreations.com/">http://monika.kunruchcreations.com/</a></li>
+	<li><a href="http://monikaratan.in/">http://monikaratan.in/</a></li>
 </ul>
+
+[**Update**: I have moved some of the sites above to Jekyll and they are now using different themes that I built upon Jekyll.]
+
 <strong>SuperDev</strong> is powering the following sites that I manage:
 <ul>
 	<li><a href="http://superdevresources.com/">http://superdevresources.com/</a></li>
-	<li><a href="http://blog.superdevresources.com/">http://blog.superdevresources.com/</a></li>
 </ul>
 <strong>Source code</strong> of these themes is accessible from <a href="https://github.com/kanishkkunal" target="_blank">my git hub page</a> and  you are free to use it to develop your own themes.
 

@@ -481,7 +481,7 @@ ul.category-posts {
 }
 
 /* Different styling for Websites portfolio */
-#websites-portfolio {
+.tile-portfolio {
     .portfolio-area .portfolio-item {
         background-color: $content-background-color;
         float: left;
@@ -493,6 +493,13 @@ ul.category-posts {
         }
     }
 
+    .portfolio-area .portfolio-image {
+        border: none;
+        padding: 0;
+    }
+}
+
+#websites-portfolio {
     .portfolio-area .portfolio-image {
         border: none;
         padding: 0;

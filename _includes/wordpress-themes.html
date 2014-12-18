@@ -1,0 +1,17 @@
+<div id="themes-portfolio" class="content-area clearfix tile-portfolio ">
+    <div id="portfolio" class="portfolio-area clearfix">
+        <ul class="portfolio-list clearfix">
+        {% for theme in site.data.wordpress-themes %}
+          <li class="portfolio-item">
+              <div class="portfolio-content">
+                    <figure class="portfolio-cover" title="{{theme.name}}">
+                        <a href="{{theme.url}}" target="_blank">
+                                     <img class="portfolio-image" src="{{theme.img}}" alt="">
+                        </a>
+                    </figure>
+              </div>
+          </li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>

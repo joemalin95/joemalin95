@@ -14,13 +14,25 @@
   img: /images/portfolio/games-kunruchcreations-com.png
   url: http://games.kunruchcreations.com/
 
+- name: Jiya Skin Care Clinic
+  img: /images/portfolio/jiyaskincareclinic-com.jpg
+  url: http://jiyaskincareclinic.com/
+
 - name: Super Dev Resources
   img: /images/portfolio/superdevresources-com.jpg
   url: http://superdevresources.com/
 
-- name: Jiya Skin Care Clinic
-  img: /images/portfolio/jiyaskincareclinic-com.jpg
-  url: http://jiyaskincareclinic.com/
+- name: Super Blogging Resources
+  img: /images/portfolio/superbloggingresources-com.jpg
+  url: http://superbloggingresources.com/
+
+- name: Coding Tips
+  img: /images/portfolio/codingtips-kanishkkunal-in.png
+  url: http://codingtips.kanishkkunal.in/
+
+- name: Kanishk Kunal
+  img: /images/portfolio/kanishkkunal-in.jpg
+  url: http://kanishkkunal.in/
 
 
 

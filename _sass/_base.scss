@@ -284,6 +284,12 @@ pre {
         margin-left: 0;
         margin-right: 0;
         border-radius: 0;
+
+        @include media-query($on-palm) {
+            font-size: 0.75 * $base-font-size;
+            width: 33.33%;
+            padding: 4px 10px;
+        }
     }
 
     .ghost-button:first-child {

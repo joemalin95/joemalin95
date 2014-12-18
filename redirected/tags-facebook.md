@@ -1,6 +1,6 @@
 ---
 layout: redirected
 sitemap: false
-permalink: /tags/Facebook/
+permalink: /Tags/Facebook/
 redirect_to:  http://kanishkkunal.in/blog/
 ---

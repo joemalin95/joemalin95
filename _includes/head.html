@@ -7,9 +7,10 @@
   {% if page.description %}
   <meta name="description" content="{{ page.description | truncate: 160 }}">
   <meta property="og:description" content="{{ page.description | truncate: 160 }}">
-  {% elsif page.excerpt %}
-  <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
-  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+  {% elsif page.content %}
+  {% capture description %}{{ page.content | markdownify | strip_html | strip_newlines | truncate: 160 }}{% endcapture %}
+  <meta name="description" content="{{ description }}">
+  <meta property="og:description" content="{{ description }}">
   {% endif %}
 
   <meta property="og:site_name" content="{{ site.title }}">

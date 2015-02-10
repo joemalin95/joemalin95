@@ -2,7 +2,7 @@
 layout: workpage
 title: FAQs
 permalink: /info/faq/
-active: work
+active: info
 description: Web Development portfolio of Kanishk Kunal. WordPress themes, Jekyll themes, Blogs and WebApps
 ---
 

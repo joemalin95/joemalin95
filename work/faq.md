@@ -1,8 +1,8 @@
 ---
 layout: workpage
-title: Web Development
-permalink: /work/web-development/
-active: work
+title: FAQs
+permalink: /info/faq/
+active: info
 description: Web Development portfolio of Kanishk Kunal. WordPress themes, Jekyll themes, Blogs and WebApps
 ---
 

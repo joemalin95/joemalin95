@@ -1,8 +1,8 @@
 ---
 layout: workpage
-title: Blogging
-permalink: /work/blogging/
-active: work
+title: My Guarantee
+permalink: /info/guarantee/
+active: info
 description: Content Writing portfolio of Kanishk Kunal. Articles on App Development, Web Development, Design & Development resources.
 ---
 

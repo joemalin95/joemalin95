@@ -1,6 +1,6 @@
 ---
 layout: workpage
-title: My Guarantee
+title: My Money Back Guarantee
 permalink: /how/guarantee/
 active: how
 description: Content Writing portfolio of Kanishk Kunal. Articles on App Development, Web Development, Design & Development resources.

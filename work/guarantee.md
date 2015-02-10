@@ -2,7 +2,7 @@
 layout: workpage
 title: My Guarantee
 permalink: /info/guarantee/
-active: info
+active: work
 description: Content Writing portfolio of Kanishk Kunal. Articles on App Development, Web Development, Design & Development resources.
 ---
 

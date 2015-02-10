@@ -2,7 +2,7 @@
 layout: workpage
 title: How It Works
 permalink: /info/
-active: info
+active: work
 description: Learn all you need to know about
 ---
 

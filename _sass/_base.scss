@@ -6,8 +6,13 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 400;
-    color: $text-color;
-    background-color: darken($background-color, 8%);
+    color: $text-color; 
+    background: url(images/coffee3.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ /**  background-color: darken($background-color, 8%);
     -webkit-text-size-adjust: 100%;
     background-image:url('images/overlay.png');
     background-repeat:repeat, no-repeat;
@@ -15,7 +20,7 @@ body {
     width: 100%;
     min-height: 100%;
     overflow-y: scroll;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
 /**

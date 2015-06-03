@@ -11,12 +11,12 @@
 
     a {
         position: relative;
-        color: $grey-color;
-        opacity: 0.5;
+        color: #ffffff;
+        opacity: 0.6;
     }
 
     svg {
-        fill: $grey-color;
+        fill: #ffffff;
     }
 
     a:hover {
@@ -270,20 +270,21 @@ ul.category-posts {
 
 
 #persona header {
-    position: absolute;
+    -webkit-box-shadow: 1px 1px 10px 2px #222;
+        box-shadow: 1px 1px 10px 2px #222;
+   /*  position: absolute; */
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     z-index: 999;
-    background: -moz-linear-gradient(45deg,  rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -moz-linear-gradient(45deg,  rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */ 
     background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(0,0,0,0.9)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(45deg,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(45deg,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(45deg,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
     background: linear-gradient(45deg,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
     @include media-query($on-laptop) {
         background: transparent;
         position: relative;

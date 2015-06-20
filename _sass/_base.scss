@@ -274,7 +274,7 @@ pre {
      font-size: 0.8 * $base-font-size;
 }
 
-.ghost-button:hover, .ghost-button:active {
+.ghost-button:active {
   color:#fff;
   border: 1px solid $link-color;
   background:$link-color;

@@ -112,9 +112,41 @@
     </nav>
 
     <article class="post-content">
-        <p>I love doing Web Development and try to make clean, content-focused and responsive Websites. All these sites and blogs listed below run on themes or templates developed by me.</p>
+        <p>Here you can find some commonly asked questions about The Song Cafe. If you have any specific questions, feel free to contact me using the form provided at the bottom of the page.</p>
 
-<div id="websites-portfolio" class="content-area clearfix tile-portfolio ">
+<html>
+  <head>
+    <title>Contact Form</title>
+    <!-- We need the hosted versions of jQuery and the Parse library -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+
+    <script src="/js/emailer.js"></script>
+
+    <style type="text/css">
+      #response { display:none; padding: 5px;}
+      .success { background-color: green;}
+      .error { background-color: red;}
+    </style>
+
+  </head>
+  <body>
+    <div id="response"></div>
+    <form id="myForm">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" placeholder="Name" /><br />
+
+      <label for="emailAddress">Email Address:</label>
+      <input type="email" name="email" id="email" placeholder="Email address" /><br />
+
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="5" cols="10" placeholder="Your message"></textarea><br />
+
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
+<!--<div id="websites-portfolio" class="content-area clearfix tile-portfolio ">
     <div id="portfolio" class="portfolio-area clearfix">
         <ul class="portfolio-list clearfix">
         
@@ -123,7 +155,7 @@
                     <div class="portfolio-cover" title="Monika Ratan">
                         <div class="browser-mockup">
                           <a href="http://monikaratan.in/" target="_blank">
-                              <img class="portfolio-image" src="/images/portfolio/monikaratan-in.jpg" alt="" />
+                              <img class="portfolio-image" src="/images/portfolio/monikaratan-in.jpg" alt="">
                           </a>
                         </div>
                     </div>
@@ -135,7 +167,7 @@
                     <div class="portfolio-cover" title="KunRuch Creations">
                         <div class="browser-mockup">
                           <a href="http://kunruchcreations.com/" target="_blank">
-                              <img class="portfolio-image" src="/images/portfolio/kunruchcreations-com.png" alt="" />
+                              <img class="portfolio-image" src="/images/portfolio/kunruchcreations-com.png" alt="">
                           </a>
                         </div>
                     </div>
@@ -147,7 +179,7 @@
                     <div class="portfolio-cover" title="KunRuch Creations Apps">
                         <div class="browser-mockup">
                           <a href="http://apps.kunruchcreations.com/" target="_blank">
-                              <img class="portfolio-image" src="/images/portfolio/apps-kunruchcreations-com.png" alt="" />
+                              <img class="portfolio-image" src="/images/portfolio/apps-kunruchcreations-com.png" alt="">
                           </a>
                         </div>
                     </div>
@@ -159,7 +191,7 @@
                     <div class="portfolio-cover" title="KunRuch Creations Games">
                         <div class="browser-mockup">
                           <a href="http://games.kunruchcreations.com/" target="_blank">
-                              <img class="portfolio-image" src="/images/portfolio/games-kunruchcreations-com.png" alt="" />
+                              <img class="portfolio-image" src="/images/portfolio/games-kunruchcreations-com.png" alt="">
                           </a>
                         </div>
                     </div>
@@ -171,7 +203,7 @@
                     <div class="portfolio-cover" title="Jiya Skin Care Clinic">
                         <div class="browser-mockup">
                           <a href="http://jiyaskincareclinic.com/" target="_blank">
-                              <img class="portfolio-image" src="/images/portfolio/jiyaskincareclinic-com.jpg" alt="" />
+                              <img class="portfolio-image" src="/images/portfolio/jiyaskincareclinic-com.jpg" alt="">
                           </a>
                         </div>
                     </div>
@@ -183,7 +215,7 @@
                     <div class="portfolio-cover" title="Super Dev Resources">
                         <div class="browser-mockup">
                           <a href="http://superdevresources.com/" target="_blank">
-                              <img class="portfolio-image" src="/images/portfolio/superdevresources-com.jpg" alt="" />
+                              <img class="portfolio-image" src="/images/portfolio/superdevresources-com.jpg" alt="">
                           </a>
                         </div>
                     </div>
@@ -195,7 +227,7 @@
                     <div class="portfolio-cover" title="Super Blogging Resources">
                         <div class="browser-mockup">
                           <a href="http://superbloggingresources.com/" target="_blank">
-                              <img class="portfolio-image" src="/images/portfolio/superbloggingresources-com.jpg" alt="" />
+                              <img class="portfolio-image" src="/images/portfolio/superbloggingresources-com.jpg" alt="">
                           </a>
                         </div>
                     </div>
@@ -207,7 +239,7 @@
                     <div class="portfolio-cover" title="Coding Tips">
                         <div class="browser-mockup">
                           <a href="http://codingtips.kanishkkunal.in/" target="_blank">
-                              <img class="portfolio-image" src="/images/portfolio/codingtips-kanishkkunal-in.png" alt="" />
+                              <img class="portfolio-image" src="/images/portfolio/codingtips-kanishkkunal-in.png" alt="">
                           </a>
                         </div>
                     </div>
@@ -219,7 +251,7 @@
                     <div class="portfolio-cover" title="Kanishk Kunal">
                         <div class="browser-mockup">
                           <a href="http://kanishkkunal.in/" target="_blank">
-                              <img class="portfolio-image" src="/images/portfolio/kanishkkunal-in.jpg" alt="" />
+                              <img class="portfolio-image" src="/images/portfolio/kanishkkunal-in.jpg" alt="">
                           </a>
                         </div>
                     </div>
@@ -229,6 +261,7 @@
         </ul>
     </div>
 </div>
+
 
 <h2 class="text-center">WordPress Themes</h2>
 
@@ -240,7 +273,7 @@
               <div class="portfolio-content">
                     <figure class="portfolio-cover" title="Fastr">
                         <a href="http://themes.kanishkkunal.in/fastr/" target="_blank">
-                                     <img class="portfolio-image" src="http://kanishkkunal.in/wp-content/uploads/sites/2/2014/02/Fastr-Screenshot.png" alt="" />
+                                     <img class="portfolio-image" src="http://kanishkkunal.in/wp-content/uploads/sites/2/2014/02/Fastr-Screenshot.png" alt="">
                         </a>
                     </figure>
               </div>
@@ -249,6 +282,7 @@
         </ul>
     </div>
 </div>
+ -->
 
     </article>
 

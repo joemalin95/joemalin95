@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.5.0"
+  },
+  "applications": {
+    "_default": {
+      "link": "faq contact form"
+    },
+    "faq contact form": {
+      "applicationId": "Wri8lIj0ZoCzgQOGmXdwFywvgKCZNR18wdoKI4F5",
+      "masterKey": "MWqrT9BV4miMAnlSTuNK0uxpyt2ILt4x2GIDSmM2"
+    }
+  }
+}

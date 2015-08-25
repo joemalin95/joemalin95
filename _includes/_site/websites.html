@@ -1,0 +1,19 @@
+<div id="websites-portfolio" class="content-area clearfix tile-portfolio ">
+    <div id="portfolio" class="portfolio-area clearfix">
+        <ul class="portfolio-list clearfix">
+        {% for sites in site.data.websites %}
+          <li class="portfolio-item">
+              <div class="portfolio-content clearfix">
+                    <div class="portfolio-cover" title="{{sites.name}}">
+                        <div class="browser-mockup">
+                          <a href="{{sites.url}}" target="_blank">
+                              <img class="portfolio-image" src="{{sites.img}}" alt="">
+                          </a>
+                        </div>
+                    </div>
+              </div>
+          </li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>

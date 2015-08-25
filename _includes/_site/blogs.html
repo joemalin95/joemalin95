@@ -1,0 +1,26 @@
+<div id="blogs-portfolio" class="content-area clearfix">
+	<div id="portfolio" class="portfolio-area clearfix">
+	    <ul class="portfolio-list clearfix">
+        {% for blog in site.data.blogs %}
+          <li class="portfolio-item">
+              <div class="portfolio-content clearfix">
+                    <figure class="portfolio-cover" title="{{blog.name}}">
+                        <a href="{{blog.url}}" target="_blank">
+					        <img class="portfolio-image" src="{{blog.img}}" alt="">
+                        </a>
+				    </figure>
+                    <div class="portfolio-description">
+                        <h2 class="portfolio-title"><a href="{{blog.url}}" target="_blank">{{blog.name}}</a></h2>
+                        <div class="portfolio-fields">
+                          <p>
+                            {{blog.description}}
+                          </p>
+                          <a title="Articles by {{site.name}} on {{blog.name}}" href="{{blog.author_url}}" target="_blank">{{blog.author_text}} &rarr;</a>
+                        </div>
+                    </div>
+              </div>
+          </li>
+        {% endfor %}
+	    </ul>
+	</div>
+</div>

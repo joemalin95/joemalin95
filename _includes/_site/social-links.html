@@ -1,0 +1,22 @@
+<div class="social-media-list">
+
+    {% if site.twitter_username %}
+    <a class="footer-social-link" href="https://twitter.com/{{ site.twitter_username }}" title="Twitter"  target="_blank" rel="nofollow">{% include svg-icons/twitter.html %}</a>
+    {% endif %}
+
+    {% if site.behance_username %}
+    <a class="footer-social-link" href="https://behance.net/{{ site.behance_username }}" title="Behance"  target="_blank" rel="nofollow">{% include svg-icons/behance.html %}</a>
+    {% endif %}
+
+    {% if site.linkedin_url %}
+    <a class="footer-social-link" href="{{ site.linkedin_url }}" title="LinkedIn" target="_blank" rel="nofollow">{% include svg-icons/linkedin.html %}</a>
+    {% endif %}
+
+    {% if site.googleplus_url %}
+    <a class="footer-social-link" href="{{ site.googleplus_url }}" title="Google Plus" target="_blank" rel="nofollow">{% include svg-icons/google-plus.html %}</a>
+    {% endif %}
+
+    {% if site.github_username %}
+    <a class="footer-social-link" href="https://github.com/{{ site.github_username }}" title="GitHub" target="_blank" rel="nofollow">{% include svg-icons/github.html %}</a>
+    {% endif %}
+</div>

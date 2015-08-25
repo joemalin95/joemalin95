@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "Question": {
+      "applicationId": "WiCLHcUExD7KOaJVuXXQx1dXCHQoZGVWeLosqeko"
+    },
+    "_default": {
+      "link": "Question"
+    }
+  }
+}

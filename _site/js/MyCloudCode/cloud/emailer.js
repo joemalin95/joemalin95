@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
   // Initialize Parse with your Parse application & javascript keys
-  Parse.initialize("Wri8lIj0ZoCzgQOGmXdwFywvgKCZNR18wdoKI4F5", "s8EwVh0fyLA6NOaiaZsNzg68kv69TVrk1Ng3K2Ow");
+  Parse.initialize("WiCLHcUExD7KOaJVuXXQx1dXCHQoZGVWeLosqeko", "OtUW4xlaaOXhIf7GYzgdsUoPa5yQuUeGoje2t7Xp");
 
   // Setup the form to watch for the submit event
   $('#myForm').submit(function(e){
@@ -24,7 +24,8 @@ $(document).ready(function(){
 
       error: function(object, error) {
         console.log(error);
-        $('#response').html('Error! Email not sent!').addClass('error').fadeIn('fast');
+        $('#response').html('Error! Email not 
+sent!').addClass('error').fadeIn('fast');
       }
     });
   });

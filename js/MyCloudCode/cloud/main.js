@@ -1,9 +1,13 @@
 
 // Use Parse.Cloud.define to define as many cloud functions as you want.
 // For example:
+Parse.Cloud.define("hello", function(request, response) {
+  response.success("Hello world!");
+});
+
 Parse.Cloud.define("sendEmail", function(request, response) {
   var sendgrid = require("sendgrid");
-  sendgrid.initialize("thesongbarista", "sA276362!");
+  sendgrid.initialize("joemalin95", "sA276362!");
  
   var name = request.params.name;
   var email = request.params.email;
@@ -25,8 +29,4 @@ Parse.Cloud.define("sendEmail", function(request, response) {
        response.error("Uh oh, something went wrong");
     }
   });
-});
-
-Parse.Cloud.define("hello", function(request, response) {
-  response.success("Hello world!");
 });

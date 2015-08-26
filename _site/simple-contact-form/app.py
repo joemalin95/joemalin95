@@ -7,7 +7,7 @@ app = Flask(__name__)
 mandrill_client = Mandrill(os.environ['MANDRILL_API_KEY'])
 
 
-@app.route('/')
+@app.route('/send')
 def index():
     return redirect(os.environ['USER_SITE'])
 

@@ -1,5 +1,5 @@
 import os
-import logging
+import render
 
 from mandrill import Mandrill
 from flask import Flask, request, redirect, abort
@@ -17,9 +17,9 @@ def index():
 def forward():
     message = {
                'to': [{'email': os.environ['USER_EMAIL']}],
-               'from_email': request.form.get('email'),
-               'subject': 'Message from {}, Subject:{}'.format(request.form.get('name'), request.form.get('subject')),
-               'text': request.form.get('message'),
+               'from_email': 'songcafesender@gmail.com',
+               'subject': '{} has a question about The Song Cafe'.format(request.form.get('name')),
+               'text': 'E-mail address: {}\nName: {}\n\nQuestion:\n\n{}'.format(request.form.get('email'), request.form.get('name'), request.form.get('message')),
               }
     result = mandrill_client.messages.send(message=message)
     if result[0]['status'] != 'sent':

@@ -114,13 +114,63 @@
     <article class="post-content">
         <p>Here you can find some commonly asked questions about The Song Cafe. If you have any specific questions, feel free to contact me using the form provided at the bottom of the page.</p>
 
+<html>
 <form action="https://questionform.herokuapp.com/send" method="POST">
-  Email: <input type="text" name="name" /><br />
-  Name: <input type="text" name="email" /><br />
-  Subject: <input type="text" name="subject" /><br />
-  Message: <textarea name="message" cols="40" rows="5"></textarea>
-  <input type="submit" value="Send Message" />
+
+  <header>
+    <h2>Example Responsive Form</h2>
+    <div>This form breaks at 600px and goes from a left-label form to a top-label form. At above 1200px, the labels align right.</div>
+  </header>
+
+  <hr />
+  
+  <div>
+    <label class="desc" id="title1" for="name">Name</label>
+    <div>
+      <input id="name" name="name" type="text" class="field text fn" value="" size="8" tabindex="1" />
+    </div>
+  </div>
+    
+  <div>
+    <label class="desc" id="title3" for="email">
+      Email
+    </label>
+    <div>
+      <input id="email" name="email" type="email" spellcheck="false" value="" maxlength="255" tabindex="3" /> 
+   </div>
+  </div>
+    
+  <div>
+    <label class="desc" id="title4" for="message">
+      Message
+    </label>
+  
+    <div>
+      <textarea id="message" name="message" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+    </div>
+  </div>
+
+  <div>
+		<div>
+			<div>
+				<input id="saveForm" name="saveForm" type="submit" value="Send Message" />
+    </div>
+    </div>
+	</div>
+  
 </form>
+
+
+
+<!---Name: <input type="text" name="name"><br>
+  E-mail Address: <input type="text" name="email"><br>
+  Subject: <input type="text" name="subject"><br>
+  Message: <textarea name="message" cols="40" rows="5"></textarea>
+  <input type="submit" value="Send Message"> 
+</form> ---->
+
+
+</html>
 
 <!-- <div id="websites-portfolio" class="content-area clearfix tile-portfolio ">
     <div id="portfolio" class="portfolio-area clearfix">

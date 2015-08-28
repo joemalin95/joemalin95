@@ -1,12 +1,10 @@
 import os
-import render
 
 from mandrill import Mandrill
 from flask import Flask, request, redirect, abort
 
 app = Flask(__name__)
 mandrill_client = Mandrill(os.environ['MANDRILL_API_KEY'])
-
 
 @app.route('/')
 def index():

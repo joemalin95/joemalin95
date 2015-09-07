@@ -13,8 +13,9 @@ function validateName() {
 
   var name = document.getElementById('name').value;
 
-  if(name.length == 0) {
+  if (name.length == 0) {
 
+    document.getElementById("name-error").style.visibility = "visible";
     producePrompt('Name is required', 'name-error' , 'red');
     return false;
 
@@ -22,12 +23,17 @@ function validateName() {
 
   if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
 
-    producePrompt('First and last name, please.','name-error', 'red');
+    document.getElementById("name-error").style.visibility = "visible";
+    producePrompt('Include your first and last name','name-error', 'red');
     return false;
 
   }
 
-  return true;
+  if (name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+  	document.getElementById("name-error").style.visibility = "hidden";
+  }
+
+    return true;
 
 }
 
@@ -35,22 +41,27 @@ function validateEmail () {
 
   var email = document.getElementById('email').value;
 
-  if(email.length == 0) {
+  if (email.length == 0) {
 
-    producePrompt('Email Invalid','email-error', 'red');
+    document.getElementById("email-error").style.visibility = "visible";
+    producePrompt('E-mail is required','email-error', 'red');
     return false;
 
   }
 
-  if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+  if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
 
-    producePrompt('Email Invalid', 'email-error', 'red');
+    document.getElementById("email-error").style.visibility = "visible";
+    producePrompt('Invalid e-mail address', 'email-error', 'red');
     return false;
 
   }
 
-  return true;
+  if (email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+  	document.getElementById("email-error").style.visibility = "hidden";
+  }
 
+    return true;
 }
 
 function validateMessage() {
@@ -59,18 +70,24 @@ function validateMessage() {
   var left = required - message.length;
 
   if (left > 0) {
-    producePrompt('Please type in your question here','message-error','red');
+
+  	document.getElementById("message-error").style.visibility = "visible";
+    producePrompt('Don\'t forget to ask your question!','message-error','red');
     return false;
   }
 
-  return true;
+  if (left <= 0) {
+  	
+  	document.getElementById("message-error").style.visibility = "hidden";
+  }
 
+  return true;
 }
 
 function validateForm() {
   if (!validateName() || !validateEmail() || !validateMessage()) {
     jsShow('submit-error');
-    producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+    producePrompt('Please fix errors to submit your question.', 'submit-error', 'red');
     setTimeout(function(){jsHide('submit-error');}, 3000);
     return false;
   }
@@ -104,13 +121,24 @@ function producePrompt(message, promptLocation, color) {
 
 
 }
+
+Element.prototype.remove = function() {
+    this.parentElement.removeChild(this);
+}
+NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+    for(var i = this.length - 1; i >= 0; i--) {
+        if(this[i] && this[i].parentElement) {
+            this[i].parentElement.removeChild(this[i]);
+        }
+    }
+}
 </script>
 
 <form name="questionform" action="https://questionform.herokuapp.com/send" onsubmit="return validateForm()" method="POST">
 
   <header>
-    <h2>Example Responsive Form</h2>
-    <div>This form breaks at 600px and goes from a left-label form to a top-label form. At above 1200px, the labels align right.</div>
+    <h2>Don't see your question? Ask it here!</h2>
+    <div>If you have any other questions or concerns, use this form to contact me directly.</div>
   </header>
 
   <hr>
@@ -135,7 +163,7 @@ function producePrompt(message, promptLocation, color) {
     
   <div>
     <label class="desc" id="title4" for="message">
-      Message
+      Question
     </label>
   
     <div>
@@ -147,7 +175,7 @@ function producePrompt(message, promptLocation, color) {
   <div>
 		<div>
 			<div>
-				<input id="saveForm" name="saveForm" type="submit" value="Send Message">
+				<input id="saveForm" name="saveForm" type="submit" value="Send Question" tabindex="5">
 				<p name="loadingText" id="loadingText" style="display:none;">Sending...</p> 
 				<img src="http://apps.voxmedia.com/graphics/sbnation-nba-draft-meme/images/loader-427f86c0.gif" name="loadingSpinner" id="loadingSpinner" height="5%" width="5%" style="display:none;">
 				<span class='error-message' id='submit-error'></span>
@@ -156,3 +184,11 @@ function producePrompt(message, promptLocation, color) {
 	</div>
   
 </form>
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+		$.get("https://questionform.herokuapp.com/");
+	});
+
+</script>

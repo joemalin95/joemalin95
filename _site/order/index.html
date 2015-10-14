@@ -108,45 +108,212 @@
   </header>
 
   <article class="post-content">
-    <p>You can find me on <span class="social-media-list">
-    
-    <a href="https://twitter.com/kanishkkunal" title="Twitter" target="_blank" rel="nofollow">Twitter</a>,
-    
-    
-    
-    <a href="https://www.linkedin.com/in/kanishkkunal" title="LinkedIn" target="_blank" rel="nofollow">LinkedIn</a>
-    
-    &
-    
-    <a href="https://github.com/kanishkkunal" title="GitHub" target="_blank" rel="nofollow">GitHub</a>
-    
-</span></p>
+    <script>
+function validateFname() {
 
-<p>In case you need to reach out to me directly then kindly use the form below.</p>
+  var fname = document.getElementById('fname').value;
 
-<p>Please note that I may not be able to reply to every query. Thanks!</p>
+  if (fname.length == 0) {
 
-<div id="wufoo-z9wcepe0gr9m4e">
-Fill out my <a href="https://kunruch.wufoo.com/forms/z9wcepe0gr9m4e">online form</a>.
-</div>
-<div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Online contact and registration forms from <a href="http://www.wufoo.com">Wufoo</a>.</div>
-<script type="text/javascript">var z9wcepe0gr9m4e;(function(d, t) {
-var s = d.createElement(t), options = {
-'userName':'kunruch',
-'formHash':'z9wcepe0gr9m4e',
-'autoResize':true,
-'height':'644',
-'async':true,
-'host':'wufoo.com',
-'header':'show',
-'ssl':true};
-s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-s.onload = s.onreadystatechange = function() {
-var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-try { z9wcepe0gr9m4e = new WufooForm();z9wcepe0gr9m4e.initialize(options);z9wcepe0gr9m4e.display(); } catch (e) {}};
-var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-})(document, 'script');</script>
+    document.getElementById("fname-error").style.visibility = "visible";
+    producePrompt('Name is required', 'fname-error' , 'red');
+    return false;
 
+  }
+
+
+  if (!fname.length == 0) {
+  	document.getElementById("fname-error").style.visibility = "hidden";
+  }
+
+    return true;
+
+}
+
+function validateLname() {
+
+  var lname = document.getElementById('lname').value;
+
+  if (lname.length == 0) {
+
+    document.getElementById("lname-error").style.visibility = "visible";
+    producePrompt('Name is required', 'lname-error' , 'red');
+    return false;
+
+  }
+
+
+  if (!lname.length == 0) {
+  	document.getElementById("lname-error").style.visibility = "hidden";
+  }
+
+    return true;
+
+}
+
+function validateEmail () {
+
+  var email = document.getElementById('email').value;
+
+  if (email.length == 0) {
+
+    document.getElementById("email-error").style.visibility = "visible";
+    producePrompt('E-mail is required','email-error', 'red');
+    return false;
+
+  }
+
+  if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+
+    document.getElementById("email-error").style.visibility = "visible";
+    producePrompt('Invalid e-mail address', 'email-error', 'red');
+    return false;
+
+  }
+
+  if (email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+  	document.getElementById("email-error").style.visibility = "hidden";
+  }
+
+    return true;
+}
+
+function validateMessage() {
+  var message = document.getElementById('message').value;
+  var required = 1;
+  var left = required - message.length;
+
+  if (left > 0) {
+
+  	document.getElementById("message-error").style.visibility = "visible";
+    producePrompt('Don\'t forget to ask your question!','message-error','red');
+    return false;
+  }
+
+  if (left <= 0) {
+  	
+  	document.getElementById("message-error").style.visibility = "hidden";
+  }
+
+  return true;
+}
+
+function validateForm() {
+  if (!validateFname() || !validateLname() || !validateEmail() || !validateMessage()) {
+    jsShow('submit-error');
+    producePrompt('Please fix errors to submit your question.', 'submit-error', 'red');
+    setTimeout(function(){jsHide('submit-error');}, 3000);
+    return false;
+  }
+  else {
+  	loading();
+  }
+}
+
+function loading() {
+  var image = document.getElementById('loadingSpinner');
+  image.style.display = 'inline';
+  var text = document.getElementById('loadingText');
+  text.style.display = 'inline';
+}
+
+function jsShow(id) {
+  document.getElementById(id).style.display = 'block';
+}
+
+function jsHide(id) {
+  document.getElementById(id).style.display = 'none';
+}
+
+
+
+
+function producePrompt(message, promptLocation, color) {
+
+  document.getElementById(promptLocation).innerHTML = message;
+  document.getElementById(promptLocation).style.color = color;
+
+
+}
+
+Element.prototype.remove = function() {
+    this.parentElement.removeChild(this);
+}
+NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+    for(var i = this.length - 1; i >= 0; i--) {
+        if(this[i] && this[i].parentElement) {
+            this[i].parentElement.removeChild(this[i]);
+        }
+    }
+}
+</script>
+
+<form name="ordersong" action="https://ordersong.herokuapp.com/send" onsubmit="return validateForm()" method="POST">
+
+  <header>
+    <h2>Order Form</h2>
+    <div>Fill out this form to order your personalized song</div>
+  </header>
+
+  <hr>
+  
+  <div>
+    <label class="desc" id="title1" for="fname">First Name</label>
+    <div>
+      <input id="fname" name="fname" type="text" class="field text fn" value="" size="8" tabindex="1" onchange='validateFname()'>
+      <span class='error-message' id='fname-error'></span>
+    </div>
+  </div>
+
+  <div>
+    <label class="desc" id="title2" for="lname">Last Name</label>
+    <div>
+      <input id="lname" name="lname" type="text" class="field text fn" value="" size="8" tabindex="2" onchange='validateLname()'>
+      <span class='error-message' id='lname-error'></span>
+    </div>
+  </div>
+    
+  <div>
+    <label class="desc" id="title3" for="email">
+      Email
+    </label>
+    <div>
+      <input id="email" name="email" type="text" spellcheck="false" value="" maxlength="255" tabindex="3" onchange='validateEmail()'>
+      <span class='error-message' id='email-error'></span>
+   </div>
+  </div>
+    
+  <div>
+    <label class="desc" id="title4" for="message">
+      Question
+    </label>
+  
+    <div>
+      <textarea id="message" name="message" spellcheck="true" rows="10" cols="50" tabindex="4" onchange='validateMessage()'></textarea>
+      <span class='error-message' id='message-error'></span>
+    </div>
+  </div>
+
+  <div>
+		<div>
+			<div>
+				<input id="saveForm" name="saveForm" type="submit" value="Place Order" tabindex="5">
+				<p name="loadingText" id="loadingText" style="display:none;">Sending...</p> 
+				<img src="http://apps.voxmedia.com/graphics/sbnation-nba-draft-meme/images/loader-427f86c0.gif" name="loadingSpinner" id="loadingSpinner" height="5%" width="5%" style="display:none;">
+				<span class='error-message' id='submit-error'></span>
+    </div>
+    </div>
+	</div>
+  
+</form>
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+		$.get("https://questionform.herokuapp.com/");
+	});
+
+</script>
   </article>
 
 </div>

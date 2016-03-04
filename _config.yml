@@ -39,6 +39,11 @@ gems:
 #  - jemoji # Emoji please!
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "page:num"
+
+
 # Exclude these files from production _site
 exclude:
     - Gemfile

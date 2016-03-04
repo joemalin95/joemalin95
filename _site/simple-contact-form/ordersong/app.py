@@ -17,7 +17,7 @@ def forward():
                'to': [{'email': os.environ['USER_EMAIL']}],
                'from_email': 'songcafesender@gmail.com',
                'subject': '{} ordered a song!'.format(request.form.get('lname')),
-               'text': 'E-mail address: {}\nName: {} {}\n\nQuestion:\n\n{}'.format(request.form.get('email'), request.form.get('fname'), request.form.get('lname'), request.form.get('message')),
+               'text': 'E-mail address: {}\nName: {} {}\n\nSong Description:\n\n{}'.format(request.form.get('email'), request.form.get('fname'), request.form.get('lname'), request.form.get('message')),
               }
     result = mandrill_client.messages.send(message=message)
     if result[0]['status'] != 'sent':

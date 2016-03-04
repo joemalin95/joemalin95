@@ -5,9 +5,9 @@
     <description>Personalized, Affordable Songs</description>
     <link>http://www.thesongcafe.com/</link>
     <atom:link href="http://www.thesongcafe.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Oct 2015 17:41:38 -0500</pubDate>
-    <lastBuildDate>Wed, 14 Oct 2015 17:41:38 -0500</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Fri, 04 Mar 2016 01:13:10 -0600</pubDate>
+    <lastBuildDate>Fri, 04 Mar 2016 01:13:10 -0600</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
     
       <item>
         <title>Effects of being featured in Red Stripe deals on Windows Phone</title>
@@ -79,7 +79,7 @@
         <guid isPermaLink="true">http://www.thesongcafe.com/effects-of-being-featured-in-red-stripe-deal-on-windows-phone/</guid>
         
         
-        <category>windows phone development</category>
+        <category>Windows Phone Development</category>
         
       </item>
     
@@ -123,9 +123,9 @@
         <guid isPermaLink="true">http://www.thesongcafe.com/all-my-sites-now-running-self-made-themes/</guid>
         
         
-        <category>web development</category>
+        <category>Web Development</category>
         
-        <category>wordpress</category>
+        <category>WordPress</category>
         
       </item>
     
@@ -170,9 +170,9 @@
         <guid isPermaLink="true">http://www.thesongcafe.com/fastr-simple-elegant-fast-wordpress-theme/</guid>
         
         
-        <category>web development</category>
+        <category>Web Development</category>
         
-        <category>wordpress</category>
+        <category>WordPress</category>
         
       </item>
     
@@ -214,7 +214,7 @@
         <guid isPermaLink="true">http://www.thesongcafe.com/2-millions-downloads-on-windows-phone/</guid>
         
         
-        <category>windows phone development</category>
+        <category>Windows Phone Development</category>
         
       </item>
     
@@ -252,9 +252,9 @@ If you pin superdevresources.com to your taskbar you will be able to easily acce
         <guid isPermaLink="true">http://www.thesongcafe.com/superdevresources/</guid>
         
         
-        <category>windows development</category>
+        <category>Windows Development</category>
         
-        <category>windows phone development</category>
+        <category>Windows Phone Development</category>
         
       </item>
     
@@ -304,7 +304,7 @@ If you pin superdevresources.com to your taskbar you will be able to easily acce
         <guid isPermaLink="true">http://www.thesongcafe.com/1-million-downloads-on-windows-phone/</guid>
         
         
-        <category>windows phone development</category>
+        <category>Windows Phone Development</category>
         
       </item>
     
@@ -352,7 +352,7 @@ If you pin superdevresources.com to your taskbar you will be able to easily acce
         <guid isPermaLink="true">http://www.thesongcafe.com/making-of-mytexttwister-webapp/</guid>
         
         
-        <category>web development</category>
+        <category>Web Development</category>
         
       </item>
     
@@ -414,7 +414,7 @@ If you pin superdevresources.com to your taskbar you will be able to easily acce
         <guid isPermaLink="true">http://www.thesongcafe.com/leaving-microsoft-and-starting-a-new-journey/</guid>
         
         
-        <category>general</category>
+        <category>General</category>
         
       </item>
     

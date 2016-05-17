@@ -1,12 +1,4 @@
----
-layout: workpage
-title: FAQs
-permalink: /how/faq/
-active: how
-description: Web Development portfolio of Kanishk Kunal. WordPress themes, Jekyll themes, Blogs and WebApps
----
-
-Here you can find some commonly asked questions about The Song Cafe. If you have any specific questions, feel free to contact me using the form provided at the bottom of the page.
+<p>Here you can find some commonly asked questions about The Song Cafe. If you have any specific questions, feel free to contact me using the form provided at the bottom of the page.</p>
 
 <script>
 function validateName() {
@@ -134,20 +126,20 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
 }
 </script>
 
-<form name="questionform" action="http://thesongcafe.com/send_email.py" onsubmit="return validateForm()" method="POST">
+<form name="questionform" action="http://thesongcafe.com/send_email" onsubmit="return validateForm()" method="POST">
 
   <header>
     <h2>Don't see your question? Ask it here!</h2>
     <div>If you have any other questions or concerns, use this form to contact me directly.</div>
   </header>
 
-  <hr>
+  <hr />
   
   <div>
     <label class="desc" id="title1" for="name">Full Name</label>
     <div>
-      <input id="name" name="name" type="text" class="field text fn" value="" size="8" tabindex="1" onchange='validateName()'>
-      <span class='error-message' id='name-error'></span>
+      <input id="name" name="name" type="text" class="field text fn" value="" size="8" tabindex="1" onchange="validateName()" />
+      <span class="error-message" id="name-error"></span>
     </div>
   </div>
     
@@ -156,8 +148,8 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
       Email
     </label>
     <div>
-      <input id="email" name="email" type="text" spellcheck="false" value="" maxlength="255" tabindex="3" onchange='validateEmail()'>
-      <span class='error-message' id='email-error'></span>
+      <input id="email" name="email" type="text" spellcheck="false" value="" maxlength="255" tabindex="3" onchange="validateEmail()" />
+      <span class="error-message" id="email-error"></span>
    </div>
   </div>
     
@@ -167,18 +159,18 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
     </label>
   
     <div>
-      <textarea id="message" name="message" spellcheck="true" rows="10" cols="50" tabindex="4" onchange='validateMessage()'></textarea>
-      <span class='error-message' id='message-error'></span>
+      <textarea id="message" name="message" spellcheck="true" rows="10" cols="50" tabindex="4" onchange="validateMessage()"></textarea>
+      <span class="error-message" id="message-error"></span>
     </div>
   </div>
 
   <div>
 		<div>
 			<div>
-				<input id="saveForm" name="saveForm" type="submit" value="Send Question" tabindex="5">
+				<input id="saveForm" name="saveForm" type="submit" value="Send Question" tabindex="5" />
 				<p name="loadingText" id="loadingText" style="display:none;">Sending...</p> 
-				<img src="http://apps.voxmedia.com/graphics/sbnation-nba-draft-meme/images/loader-427f86c0.gif" name="loadingSpinner" id="loadingSpinner" height="5%" width="5%" style="display:none;">
-				<span class='error-message' id='submit-error'></span>
+				<img src="http://apps.voxmedia.com/graphics/sbnation-nba-draft-meme/images/loader-427f86c0.gif" name="loadingSpinner" id="loadingSpinner" height="5%" width="5%" style="display:none;" />
+				<span class="error-message" id="submit-error"></span>
     </div>
     </div>
 	</div>
@@ -192,3 +184,4 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
 	});
 
 </script>
+

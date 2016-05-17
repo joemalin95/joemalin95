@@ -240,7 +240,7 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
 }
 </script>
 
-<form name="questionform" action="https://questionform.herokuapp.com/send" onsubmit="return validateForm()" method="POST">
+<form name="questionform" action="http://thesongcafe.com/send_email.py" onsubmit="return validateForm()" method="POST">
 
   <header>
     <h2>Don't see your question? Ask it here!</h2>
@@ -294,7 +294,7 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
 <script type="text/javascript">
 
 	$(document).ready(function() {
-		$.get("https://questionform.herokuapp.com/");
+		$.get("http://thesongcafe.com/send_email");
 	});
 
 </script>

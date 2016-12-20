@@ -274,10 +274,12 @@ pre {
      font-size: 0.8 * $base-font-size;
 }
 
-.ghost-button:active {
-  color:#fff;
-  border: 1px solid $link-color;
-  background:$link-color;
+.ghost-button {
+	&:hover, &:active {
+  		color:#fff;
+  		border: 1px solid $link-color;
+  		background:$link-color;
+	}
 }
 
 .ghost-button-group {

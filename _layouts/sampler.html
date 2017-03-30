@@ -7,9 +7,9 @@ layout: default
 	<h1 class="post-title">{{ page.title }}</h1>
 	</header>   
  <nav class="work-nav ghost-button-group">
-        <a class="ghost-button {% if page.title == 'Sample Song 1' %}active{% endif %}" href="/sample/">Song 1</a>
-        <a class="ghost-button {% if page.title == 'Sample Song 2' %}active{% endif %}" href="/sample/song_2/">Song 2</a>
-        <a class="ghost-button {% if page.title == 'Sample Song 3' %}active{% endif %}" href="/sample/song_3/">Song 3</a>
+     <a class="ghost-button {% if page.title == 'Sample Song 1' %}active{% endif %}" href="{{ site.baseurl }}/sample">Song 1</a>
+        <a class="ghost-button {% if page.title == 'Sample Song 2' %}active{% endif %}" href="{{ site.baseurl }}/sample/song_2">Song 2</a>
+        <a class="ghost-button {% if page.title == 'Sample Song 3' %}active{% endif %}" href="{{ site.baseurl }}/sample/song_3">Song 3</a>
     </nav>
 
     <article class="post-content">

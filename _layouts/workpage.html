@@ -7,9 +7,9 @@ layout: default
 	<h1 class="post-title">{{ page.title }}</h1>
 	</header>   
  <nav class="work-nav ghost-button-group">
-        <a class="ghost-button {% if page.title == 'How It Works' %}active{% endif %}" href="/how/">How It Works</a>
-        <a class="ghost-button {% if page.title == 'FAQs' %}active{% endif %}" href="/how/faq/">FAQs</a>
-        <a class="ghost-button {% if page.title == 'My Money Back Guarantee' %}active{% endif %}" href="/how/guarantee/">Guarantee</a>
+        <a class="ghost-button {% if page.title == 'How It Works' %}active{% endif %}" href="{{ site.baseurl }}/how">How It Works</a>
+        <a class="ghost-button {% if page.title == 'FAQs' %}active{% endif %}" href="{{ site.baseurl }}/how/faq">FAQs</a>
+        <a class="ghost-button {% if page.title == 'My Money Back Guarantee' %}active{% endif %}" href="{{ site.baseurl }}/how/guarantee">Guarantee</a>
     </nav>
 
     <article class="post-content">

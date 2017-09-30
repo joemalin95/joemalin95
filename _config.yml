@@ -5,8 +5,8 @@ name: The Song Cafe  #your name
 description: Personalized, Affordable Songs #Your description
 image: images/songcafecup.png #Url of your image of dimension 306x394px
 
-baseurl: "/thesongcafe" # the subpath of your site, e.g. /blog/
-url: "malinowski.studio/thesongcafe" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "thesongcafe.malinowski.studio" # the base hostname & protocol for your site
 twitter_username: kanishkkunal
 github_username:  kanishkkunal
 behance_username:
